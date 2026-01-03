@@ -7,7 +7,7 @@ const Users = () => {
   const users = [
     { id: 1, name: 'John Doe', role: 'Admin' },
     { id: 2, name: 'Jane Smith', role: 'User' },
-    { id: 3, name: 'John Smith', role: 'User' },
+    { id: 3, name: 'Graziele Lopes', role: 'User' },
   ]
 
   return (

@@ -3,14 +3,16 @@ import {
   CNavbarBrand,
   CButton,
 } from '@coreui/react'
+import { useNavigate } from 'react-router-dom'
 
 const Header = ({ setSidebarVisible }) => {
+  const navigate = useNavigate()
+
   return (
     <CNavbar className="border-bottom px-4 bg-white">
       <div className="d-flex align-items-center gap-3">
-        {/* Mobile toggle */}
         <button
-          className="btn btn-link d-lg-none"
+          className="btn btn-link d-lg-none text-decoration-none"
           onClick={() => setSidebarVisible(true)}
         >
           ☰
@@ -22,9 +24,14 @@ const Header = ({ setSidebarVisible }) => {
       </div>
 
       <div className="ms-auto d-flex gap-2">
-        <CButton size="sm" color="secondary">
+        <CButton
+          size="sm"
+          color="secondary"
+          onClick={() => navigate('/profile')}
+        >
           Profile
         </CButton>
+
         <CButton size="sm" color="danger">
           Logout
         </CButton>

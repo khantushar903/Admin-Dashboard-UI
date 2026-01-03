@@ -16,7 +16,6 @@ import { CChartLine } from '@coreui/react-chartjs'
 const Dashboard = () => {
   return (
     <div>
-      {/* === First row: 4 main StatCard widgets (CWidgetStatsA) === */}
       <CRow>
         {/* Widget 1: Revenue */}
         <CCol sm={3}>
@@ -159,7 +158,6 @@ const Dashboard = () => {
         </CCol>
       </CRow>
 
-      {/* === Second row: new CWidgetStatsC widgets === */}
       <CRow>
         {/* Widget 5 */}
         <CCol xs={6} sm={3}>
